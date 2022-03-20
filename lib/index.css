@@ -14,10 +14,10 @@
     --ios-disabled-color: color(var(--ios-color) blend(var(--ios-bg) 70%));
     --ios-theme: #dbdbdb;
 
-    --android-bg: #f5f5f5;
+    --android-bg: #fff;
     --android-color: color(var(--android-bg) contrast(50%));
     --android-disabled-color: color(var(--android-color) blend(var(--android-bg) 70%));
-    --android-theme: #31b6e7;
+    --android-theme: #12B564;
 
     --android-dark-bg: #292829;
     --android-dark-color: color(var(--android-dark-bg) contrast(50%));
@@ -270,7 +270,7 @@
 
         .datepicker-viewport {
             &::after {
-                background-image: linear-gradient(#f5f5f5, rgba(245, 245, 245, 0)52%, rgba(245, 245, 245, 0)48%, #f5f5f5);
+                background-image: linear-gradient(#fff, rgba(255, 255, 255, 0)52%, rgba(255, 255, 255, 0)48%, #fff)
             }
         }
 
