@@ -16,18 +16,21 @@
 
     --android-bg: #fff;
     --android-color: color(var(--android-bg) contrast(50%));
-    --android-disabled-color: color(var(--android-color) blend(var(--android-bg) 70%));
+    /* --android-disabled-color: color(var(--android-color) blend(var(--android-bg) 70%)); */
+    --android-disabled-color: #fff;
     --android-theme: #12B564;
 
     --android-dark-bg: #292829;
     --android-dark-color: color(var(--android-dark-bg) contrast(50%));
     --android-dark-disabled-color: color(var(--android-dark-color) blend(var(--android-dark-bg) 70%));
+
+    --wheel-item-height: 50px;
 }
 
 .datepicker {
-    position: absolute;
+    /* position: absolute;
     left: 0;
-    bottom: 0;
+    bottom: 0; */
     width: 100%;
     z-index: 1;
     font-size: 16px;
@@ -65,8 +68,8 @@
     .datepicker-caption-item {
         flex: 1;
         margin: 0 .25em;
-        height: 40px;
-        line-height: 40px;
+        height: var(--wheel-item-height);
+        line-height: var(--wheel-item-height);
         font-size: 1.2em;
     }
 
@@ -99,7 +102,7 @@
 
     .datepicker-wheel {
         position: absolute;
-        height: 40px;
+        height: var(--wheel-item-height);
         top: 50%;
         margin-top: -20px;
         width: 100%;
@@ -110,8 +113,8 @@
         padding: 0;
 
         &>li {
-            height: 40px;
-            line-height: 40px;
+            height: var(--wheel-item-height);
+            line-height: var(--wheel-item-height);
             font-size: 1.375em;
             cursor: pointer;
         }
